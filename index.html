@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+<body>
+    <section class="sec1">
+        <h1 class="sec1-head">Zeichenkettentrennungsmaschine</h1>
+        <form action="">
+            <label for="kette">Zu trennende Zeichenkette:</label>
+            <input type="text" name="kette" id="zeichen" class="sec1-opt">
+            <label for="kette2">Zeichenkette für die Trennungsposition:</label>
+            <input type="text" name="kette2" id="trennung" class="sec1-opt">
+            <input type="radio" name="davor" id="davor" checked>
+            <label for="">davor trennen</label>
+            <br><input type="radio" name="davor" id="" checked>
+            <label for="">danach trennen</label>
+            <br><input type="button" value="Daten absenden" onclick="show()">
+        </form>
+        <h3 class="sec1-head3">Trennen</h3>
+        <!--------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------aside----------------------------------------------------->
+        <aside class="sec1-aside">
+            <h1 class="sec1-aside-head1">Ausgabe</h1>
+            <h3 class="sec1-aside-head3">Vorderer Teil</h3>
+            <h3 class="sec1-aside-head3-2">Hinterer Teil</h3>
+            <div class="sec1-aside-div" id="vorder"></div>
+            <div class="sec1-aside-div2" id="hinter"></div>
+        </aside>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

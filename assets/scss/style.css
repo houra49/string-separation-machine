@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+body {
+  margin: 0;
+  height: 70vh;
+}
+
+.sec1 {
+  background-color: #726a95;
+  width: 40vw;
+  height: 70vh;
+  margin: 120px auto;
+  border: #726a95 solid 1px;
+  border-radius: 20px;
+  font-family: 'Balsamiq Sans', cursive;
+  padding: 0 3%;
+}
+
+.sec1-head {
+  font-family: 'Reggae One', cursive;
+  text-align: center;
+}
+
+.sec1-opt {
+  width: 100%;
+  height: 3vh;
+  background: #fff;
+  margin: 3% 0;
+}
+
+.sec1-head3 {
+  margin-top: 0;
+}
+
+.sec1-aside {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+  -ms-grid-rows: (50px)[3];
+      grid-template-rows: repeat(3, 50px);
+}
+
+.sec1-aside-head1 {
+  font-size: 1.5em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+}
+
+.sec1-aside-head3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/3/2;
+  font-size: 1em;
+}
+
+.sec1-aside-head3-2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+  font-size: 1em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.sec1-aside-div {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3/1/4/2;
+}
+
+.sec1-aside-div2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/4/3;
+}
+/*# sourceMappingURL=style.css.map */
