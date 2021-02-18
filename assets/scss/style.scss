@@ -23,9 +23,6 @@ body{
         background:#fff;
         margin: 3% 0;
     }
-    &-head3{
-    margin-top:0;
-    }
     &-aside{
     display:grid;
     grid-template-columns: repeat(2,2fr);
@@ -48,6 +45,7 @@ body{
         }
         &-div2{
             grid-area: 3/2/4/3;
+            justify-self: center;
         }
     }
 }

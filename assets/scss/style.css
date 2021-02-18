@@ -28,10 +28,6 @@ body {
   margin: 3% 0;
 }
 
-.sec1-head3 {
-  margin-top: 0;
-}
-
 .sec1-aside {
   display: -ms-grid;
   display: grid;
@@ -84,5 +80,7 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 3/2/4/3;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=style.css.map */

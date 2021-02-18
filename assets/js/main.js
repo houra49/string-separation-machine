@@ -1,18 +1,23 @@
-function myTrennen() {
-    let zeichen = document.getElementById("zeichen");
-    let trennung = document.getElementById("trennung");
-    let vorder = document.getElementById("voder");
+function show() {
+    let vorder = document.getElementById("vorder");
     let hinter = document.getElementById("hinter");
-    let teil = zeichen.value.split(trennung.value)
-    let resultVorder
-    let resultHinter
-    if (zeichen.value.indexOf(trennung.value) == -1) {
-        vorder.innerHTML = "Das Zeichnen konnte leider nicht gefunden werden"
-        hinter.innerHTML = zeichen.value
+    let danach = document.getElementById("danach");
+    let zeichen = document.getElementById("zeichen").value;
+    let trennung = document.getElementById("trennung").value;
+    let firstSplit = zeichen.split(trennung);
+    let secondSplit = trennung.length;
+    let a
+    let b
+    let z = "Eine Maschine ist ein technischen Gebilde mit durch ein Antriebssystem bewegten teilen."
+    zeichen.value = z
+    if (secondSplit == 0) {
+        vorder.innerHTML = a = "Das Zeichen konnte leider nicht gefunden werden."
+        hinter.innerHTML = b = zeichen;
+    } else if (danach.checked) {
+        vorder.innerHTML = a = firstSplit[0] + trennung
+        hinter.innerHTML = b = firstSplit[1]
     } else {
-        hinter.innerHTML = trennung.value + teil[1];
-        vorder.innerHTML = teil[0]
+        vorder.innerHTML = a = firstSplit[0]
+        hinter.innerHTML = b = trennung + firstSplit[1]
     }
-    vorder.innerHTML = resultVorder
-    hinter.innerHTML = resultHinter
 }
